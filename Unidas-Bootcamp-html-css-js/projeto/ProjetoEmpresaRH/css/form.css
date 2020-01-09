@@ -3,7 +3,11 @@ input[type=text], input[type=email] {
 }
 
 fieldset#sexo {
-    width: 150px;
+    width: 80%;
+}
+
+textarea {
+    width: 100%;
 }
 
 .info {
@@ -24,7 +28,7 @@ fieldset#sexo {
     background-color: white;
 }
 
-.borda h1 {
+.borda h1{
     margin-top: 0;
 }
 
