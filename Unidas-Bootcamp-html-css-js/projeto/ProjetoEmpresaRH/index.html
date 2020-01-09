@@ -3,11 +3,13 @@
     <head>
         <title> Site Institucional - ABC Tecnologia </title>
         <meta charset="UTF-8"/>
+        <link href="./css/main.css" rel="stylesheet"/>
+        <link href="./css/menu.css" rel="stylesheet"/>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
+                <ul class="menu">
                     <li><a href="#">A Empresa</a></li>
                     <li><a href="#">Produto</a></li>
                     <li><a href="#">Localização</a></li>
@@ -16,35 +18,41 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <article>
-                <header>
-                    <h2>Conheça-nos um pouco</h2>
-                    <p>
-                        Desde sua fundação am ABC Tecnologia é uma empresa com
-                        foco na elaboração de soluções visando agilizar os
-                        processos relativos às tarefas de seus clientes <br/>
-                        A agilidade, redução de custos e satisfação dos nossos
-                        clientes é nossa maior meta.
-                    </p>
-                </header>
-                <p>
-                    Conheça nossos <a href="#">produtos e serviços</a> e
-                    descubra o que podemos fazer por você.
-                </p>
-            </article>
+        <section class="intro"></section>
 
-        </section>
-        <aside>
-            <h2>Depoimentos dos nossos clientes</h2>
-            <p>Excelente qualidade, ótimos profissionais</p>
-            <p>
-                Estava buscando uma solução para minha clinica e a ABC nos
-                criou um sistem sob medida,
-                muito acima das nossas expectativas. Recomendo!
-            </p>
-        </aside>
-        <footer>
+        <div class="container">
+            <section>
+                <article>
+                    <header>
+                        <h2>Conheça-nos um pouco</h2>
+                        <p>
+                            Desde sua fundação am ABC Tecnologia é uma empresa com
+                            foco na elaboração de soluções visando agilizar os
+                            processos relativos às tarefas de seus clientes <br/>
+                            A agilidade, redução de custos e satisfação dos nossos
+                            clientes é nossa maior meta.
+                        </p>
+                    </header>
+                    <p>
+                        Conheça nossos <a href="#">produtos e serviços</a> e
+                        descubra o que podemos fazer por você.
+                    </p>
+                </article>
+
+            </section>
+            <aside>
+                <h2>Depoimentos dos nossos clientes</h2>
+                <p>Excelente qualidade, ótimos profissionais</p>
+                <p>
+                    Estava buscando uma solução para minha clinica e a ABC nos
+                    criou um sistem sob medida,
+                    muito acima das nossas expectativas. Recomendo!
+                </p>
+            </aside>
+        </div>
+        <footer class="footer">
+            <p> Rua Maria Antônia, 344 - Vila Buarque <br/>
+                São Paulo, SP CEP 01222-010 </p>
             <p> Copyright 2020 - Todos os direitos reservados </p>
         </footer>
     </body>
