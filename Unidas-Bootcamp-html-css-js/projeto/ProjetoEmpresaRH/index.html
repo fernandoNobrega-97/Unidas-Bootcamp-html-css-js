@@ -1,67 +1,89 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Site Institucional - ABC Tecnologia </title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="./css/main.css" rel="stylesheet"/>
-        <link href="./css/menu.css" rel="stylesheet"/>
-        <link href="./css/destaque.css" rel="stylesheet" />
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">A Empresa</a></li>
-                    <li><a href="#">Produto</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="paginas/registro.html">Trabalhe Conosco</a></li>
-                    <li><a href="paginas/contato.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="intro"></section>
 
-        <div class="container">
-            <section>
-                <article>
-                    <div>
-                        <a class="registro" href="./paginas/registro.html">
-                            Candidate-se<br/>
-                            <span class="free">·Hoje·</span>
-                        </a>
-                    </div>
-                    <header>
-                        <h2>Conheça-nos um pouco</h2>
-                        <p>
-                            Desde sua fundação am ABC Tecnologia é uma empresa com
-                            foco na elaboração de soluções visando agilizar os
-                            processos relativos às tarefas de seus clientes <br/>
-                            A agilidade, redução de custos e satisfação dos nossos
-                            clientes é nossa maior meta.
-                        </p>
-                    </header>
+<head>
+    <title>Site Institucional - ABC Tecnologia</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/menu.css" rel="stylesheet" />
+    <link href="./css/destaque.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu" id="menuTopo">
+                <li><a href="#">A Empresa</a></li>
+                <li><a href="#">Produto</a></li>
+                <li><a href="#">Localização</a></li>
+                <li><a href="paginas/registro.html">Trabalhe Conosco</a></li>
+                <li><a href="paginas/contato.html">Contato</a></li>
+                <li class="icon">
+                    <a href="">☰</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro"></section>
+
+    <div class="container">
+        <section>
+            <article>
+
+                <div>
+                    <a class="registro" href="./paginas/registro.html">
+                        Candidate-se<br/>
+                        <span class="free">·Hoje·</span>
+                    </a>
+                </div>
+
+                <header>
+                    <h2>Conheça-nos um pouco</h2>
                     <p>
-                        Conheça nossos <a href="#">produtos e serviços</a> e
-                        descubra o que podemos fazer por você.
+                        Desde sua fundação am ABC Tecnologia é uma empresa com
+                        foco na elaboração de soluções visando agilizar os
+                        processos relativos às tarefas de seus clientes<br />
+                        A agilidade, redução de custos e satisfação dos nossos
+                        clientes é nossa maior meta.
                     </p>
-                </article>
-
-            </section>
-            <aside>
-                <h2>Depoimentos dos nossos clientes</h2>
-                <p>Excelente qualidade, ótimos profissionais</p>
+                </header>
                 <p>
-                    Estava buscando uma solução para minha clinica e a ABC nos
-                    criou um sistem sob medida,
-                    muito acima das nossas expectativas. Recomendo!
+                    Conheça nossos <a href="#">produtos e serviços</a> e
+                    descubra o que podemos fazer por você.
                 </p>
-            </aside>
-        </div>
-        <footer class="footer">
-            <p> Rua Maria Antônia, 344 - Vila Buarque <br/>
-                São Paulo, SP CEP 01222-010 </p>
-            <p> Copyright 2020 - Todos os direitos reservados </p>
-        </footer>
-    </body>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Depoimentos dos nossos clientes</h2>
+            <p>Excelente qualidade, ótimos profissionais</p>
+            <p>
+                Estava buscando uma solução para minha clinica e a ABC nos
+                criou um sistem sob medida,
+                muito acima das nossas expectativas. Recomendo!
+            </p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>Av. Paulista, 1009 - Bela Vista <br />
+            São Paulo, SP CEP 00000-000</p>
+        <p>Copyright 2020 - Todos os direitos reservados</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"><script/>
+    <script type="text/javascript">
+        function mostramenu(){
+            const $menu = $('#menuTopo')
+            if($menu.hasClass('responsive')){
+                $menu.removeClass('responsive')
+            }else{
+                $menu.addClass('responsive')
+            }
+        }
+    </script>
+    
+</body>
+
 </html>
