@@ -22,7 +22,7 @@
                 <p>Sinta-se à vontade para entrar em contato</p>
             </header>
     
-            <form id="formulario" action="contatoOK.html" method="post">
+            <form id="formularioContato" action="contatoOK.html" method="post">
                 <div class="linha">
                     <label class="coluna col-2" for="nome">Seu nome:</label>
                     <div class="col-10">
@@ -47,11 +47,10 @@
                         <textarea rows="10" id="assunto" name="assunto"></textarea>
                     </div>
                 </div>
-    
-                <div class="linha">
-                    <input type="submit" value="Enviar" id="enviarContato" />
-                </div>
+              
+                <input type="submit" value="Enviar" class="enviar" />
             </form>
         </div>
+        <script src='../scripts/validacao-form.js'></script>
     </body>
 </html>
